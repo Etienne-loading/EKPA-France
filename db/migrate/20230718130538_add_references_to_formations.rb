@@ -1,0 +1,5 @@
+class AddReferencesToFormations < ActiveRecord::Migration[7.0]
+  def change
+    add_reference :formations, :organisme, foreign_key: true
+  end
+end
