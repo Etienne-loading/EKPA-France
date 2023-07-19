@@ -7,6 +7,20 @@ Organisme.destroy_all
 Bloc.destroy_all
 puts "Cleaning done"
 
+organisme1 = { nom: "Centre Inffo" }
+organisme2 = { nom: "Onlineformapro" }
+organisme3 = { nom: "Apec" }
+organisme4 = { nom: "Pole Emploi" }
+organisme5 = { nom: "Cegos" }
+[organisme1, organisme2, organisme3, organisme4, organisme5].each do |hash|
+  organisme = Organisme.create!(
+    nom: hash[:nom]
+  )
+
+  organisme.save
+  puts "Created #{organisme.nom}"
+end
+
 20.times do
   prenom = Faker::Name.first_name
   nom = Faker::Name.last_name
@@ -14,8 +28,8 @@ puts "Cleaning done"
   password = 'password'
 
   user = User.create!(
-    first_name: first_name,
-    last_name: last_name,
+    first_name: prenom,
+    last_name: nom,
     email: email,
     password: password,
   )
@@ -32,7 +46,7 @@ socio = { title: "Secrétaire Assistant Médico-Social", duree: 5, periode: "s
 tech = { title: "Technicien d'Etudes du Bâtiment en Dessin de Projet", duree: 6, periode: "semaines", organisme: Organisme.all.sample, description: "Le technicien d'études du bâtiment en dessin de projet est chargé, au sein des agences d'architecture, de maîtrise d'œuvre ou de construction de maisons individuelles, de la réalisation des documents graphiques et de la modélisation numérique des projets de bâtiment, en respectant les contraintes économiques et règlementaires." }
 
 [webdev, ui, misenpage, secretairecomptable, accueil, socio, tech].each do |hash|
-  Formation.create!(
+  formation = Formation.create!(
     title: hash[:title],
     duree: hash[:duree],
     periode: hash[:periode],
@@ -40,6 +54,6 @@ tech = { title: "Technicien d'Etudes du Bâtiment en Dessin de Projet", duree: 
     descritpion: hash[:description]
   )
 
-  blog.save
+  formation.save
   puts "Created #{formation.title}"
 end
