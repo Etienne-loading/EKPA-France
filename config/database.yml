@@ -83,4 +83,5 @@ production:
   <<: *default
   database: EKPA_France_production
   username: EKPA_France
+  url: <%= ENV['DATABASE_URL'] %>
   password: <%= ENV["EKPA_FRANCE_DATABASE_PASSWORD"] %>
