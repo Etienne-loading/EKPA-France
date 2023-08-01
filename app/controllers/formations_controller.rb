@@ -13,6 +13,14 @@ class FormationsController < ApplicationController
   end
 
   def create
+    @formation = Formation.new(formation_params)
+    @organismes = Organisme.all
+    @formation.user = current_user
+    if @formation.save
+      redirect_to root_path
+    else
+      render :new, status: :unprocessable_entity
+    end
   end
 
   def edit
