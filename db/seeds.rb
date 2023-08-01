@@ -20,6 +20,13 @@ organisme5 = { nom: "Cegos" }
   puts "Created #{organisme.nom}"
 end
 
+user = User.create!(
+  prenom: "Etienne",
+  nom: "Pagenaud",
+  email: "e.pagenaud@gmail.com",
+  password: "password"
+)
+
 20.times do
   prenom = Faker::Name.first_name
   nom = Faker::Name.last_name
