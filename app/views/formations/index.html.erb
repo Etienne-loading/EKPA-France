@@ -3,7 +3,7 @@
   <div class="row">
       <% @formations.each do |formation|%>
         <%= link_to formation_path(formation), class: "" do %>
-          <div class="bg-dark rounded">
+          <div class="bg-secondary rounded">
             <div class="col-6 my-2 p-2">
               <%= formation.title %>
               <div>
