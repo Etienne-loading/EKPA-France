@@ -1,9 +1,18 @@
-<h1>Toutes nos formations</h1>
-<div class="row">
-  <div class="col-6">
-    <% @formations.each do |formation|%>
-      <%= foramtion.title %>
-      <%= foramtion.duree %>
-      <%= foramtion.periode %>
+<div class="container">
+  <h1 class="my-3">Toutes nos formations</h1>
+  <div class="row">
+      <% @formations.each do |formation|%>
+        <%= link_to formation_path(formation), class: "" do %>
+          <div class="bg-dark rounded">
+            <div class="col-6 my-2 p-2">
+              <%= formation.title %>
+              <div>
+                <%= formation.duree %>
+                <%= formation.periode %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
   </div>
 </div>
