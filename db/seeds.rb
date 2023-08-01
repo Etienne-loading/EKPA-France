@@ -24,7 +24,8 @@ user = User.create!(
   prenom: "Etienne",
   nom: "Pagenaud",
   email: "e.pagenaud@gmail.com",
-  password: "password"
+  password: "password",
+  admin: true
 )
 
 20.times do
