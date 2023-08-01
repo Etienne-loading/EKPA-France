@@ -1,4 +1,5 @@
 class Formation < ApplicationRecord
+  ORGANISMES = []
   has_many :blocs, dependent: :destroy
   belongs_to :user
   belongs_to :organisme
