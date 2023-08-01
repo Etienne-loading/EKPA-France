@@ -30,6 +30,6 @@ class OrganismeController < ApplicationController
   end
 
   def organisme_params
-    params.require(:organisme).permit(:title, :description, :duree, :type, :code_rncp, :periode)
+    params.require(:organisme).permit(:title, :description, :duree, :type, :code_rncp, :periode )
   end
 end
