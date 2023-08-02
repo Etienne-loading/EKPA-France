@@ -4,7 +4,9 @@ Rails.application.routes.draw do
 
   resources :formations, only: [:index, :show, :new, :create]
   resources :blocs, only: [:index]
-  resources :organisme, only: [:index]
+  resources :organismes, only: [:index, :new, :create]
+  get '/catalogue', to: 'pages#catalogue', as: :catalogue
+  get '/contact', to: 'pages#contact', as: :contact
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
