@@ -16,7 +16,7 @@ class FormationsController < ApplicationController
     @formation = Formation.new(formation_params)
     @organismes = Organisme.all
     @formation.user = current_user
-    if @formation.save
+    if current_user.admin == true && @formation.save
       redirect_to root_path
     else
       render :new, status: :unprocessable_entity

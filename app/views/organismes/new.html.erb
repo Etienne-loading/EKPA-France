@@ -1,0 +1,7 @@
+<div class="container">
+  <h1 class="text-primary my-3">Ajouter un nouvel organisme au catalogue</h1>
+  <%= simple_form_for @organisme do |f| %>
+    <%= f.input :nom, label: false, placeholder: "Nom de l'organisme", input_html: { class: "mt-4" }%>
+    <%= f.submit "Ajouter", class: "btn btn-primary mt-3" %>
+  <% end %>
+</div>

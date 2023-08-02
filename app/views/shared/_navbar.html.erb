@@ -10,23 +10,33 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
-        <li class="nav-item active">
+        <li class="nav-item active link-center">
           <%= link_to "Nos formations", formations_path(@formations), class: "nav-link me-3" %>
         </li>
         <% if user_signed_in? && current_user.admin == true %>
-          <li class="nav-item active">
-            <%= link_to "Ajouter une formation", new_formation_path(@formation), class: "nav-link me-3" %>
-          </li>
           <li class="nav-item dropdown">
           <a href="#" class="avatar" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <%= image_tag "avatar_default.png", class: "avatar", alt: "dropdown menu" %>
           </a>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <%= link_to "Ajouter une formation", new_formation_path(@formation), class: "dropdown-item" %>
+              <%= link_to "Ajouter un organisme", new_organisme_path(@organisme), class: "dropdown-item" %>
+              <%= link_to "Gérer le catalogue", catalogue_path, class: "dropdown-item" %>
+              <%= link_to "Déconnexion", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
+            </div>
+          </li>
+        <% elsif user_signed_in? && current_user.admin == false %>
+          <%= link_to "Nous contacter", "/contact" , class:"nav-link me-3 link-center" %>
+          <li class="nav-link me-3">
+            <a href="#" class="avatar" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <%= image_tag "avatar_default.png", class: "avatar", alt: "dropdown menu" %>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <%= link_to "Déconnexion", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
             </div>
           </li>
         <% else %>
+          <%= link_to "Nous contacter", "/contact" , class:"nav-link me-3 link-center" %>
           <li class="nav-item">
             <%= link_to "Login", new_user_session_path, class: "nav-link" %>
           </li>
