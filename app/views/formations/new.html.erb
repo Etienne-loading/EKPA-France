@@ -8,6 +8,7 @@
     <%= f.input :periode, error: "Champ obligatoire", placeholder: "Périodes", label: false, input_html: { class: "" } %>
     <%= f.collection_select :organisme_id, Organisme.all, :id, :nom %>
     <%= f.input :code_rncp, label: false, placeholder: "Code RNCP de la formation", input_html: { class: "" } %>
+    <%= f.input :photo, as: :file %>
     <%= f.submit "Ajouter", class: "btn btn-primary mt-3" %>
   <% end %>
 </div>
