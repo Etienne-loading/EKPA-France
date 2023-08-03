@@ -3,14 +3,16 @@
   <div class="row">
       <% @formations.each do |formation|%>
         <%= link_to formation_path(formation), class: "" do %>
-          <div class="bg-secondary rounded">
-            <div class="col-6 my-2 p-2">
+          <div class="rounded">
+            <% if formation.photo != false %>
+            <div class="col-6 my-2 p-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @formation.photo.key, height: 300, crop: :fill %>')">
               <%= formation.title %>
               <div>
                 <%= formation.duree %>
                 <%= formation.periode %>
               </div>
             </div>
+            <% end %>
           </div>
         <% end %>
       <% end %>
