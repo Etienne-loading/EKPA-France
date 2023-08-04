@@ -1,12 +1,12 @@
 .card-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 2em;
+  gap: 0em;
 }
 
 .card-formation {
   border-radius: 6px;
-  width: 400px;
+  width: 380px;
   height: 260px;
   transition: .3s ease;
   background: #fff;
@@ -22,7 +22,7 @@
   }
 
 .card-img {
-    height: 70%;
+    height: 65%;
     width: 100%;
     background-position: center;
     background-size: cover;
@@ -33,17 +33,27 @@
 .card-info {
   padding-left: 1em;
   padding-right: 1em;
-  padding: 1em 1em 0.5em 1em;
+  padding: 1em 1em 1em 1em;
   justify-content: space-between;
   align-items: center;
-  height: 65px;
+  height: 90px;
 }
 
 .title-card {
-  font-size: 1em;
+  font-size: 1.1em;
   color: var(--bs-blue)
 }
 
 .element-card {
+  font-size: 0.85em;
   align-items: center;
+  text-align: center;
+}
+
+.content-card {
+
+  p {
+    font-size: 0.8em;
+    margin: 0;
+  }
 }
