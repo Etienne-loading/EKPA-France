@@ -3,20 +3,31 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
+  height: 200px;
   padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
+  color: rgb(253, 253, 253);
 }
+
+.footer-copyright a {
+  color: rgb(153, 153, 153);
+  text-decoration: none;
+}
+
+.footer-copyright a:hover {
+  color: rgb(99, 99, 99);
+}
+
 .footer-links {
   display: flex;
   align-items: center;
 }
 .footer-links a {
-  color: black;
+  color: rgb(253, 253, 253);
   text-decoration: none;
   font-size: 32px;
   padding: 0px 10px;
 }
 .footer-links a:hover {
-  opacity: 1;
+  opacity: 0.75;
+  color: rgb(131, 131, 131);
 }
