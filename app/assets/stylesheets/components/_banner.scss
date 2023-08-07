@@ -16,3 +16,17 @@
     height: 100%;
   }
 }
+
+.banner-show {
+  height: 40vh;
+  text-align: center;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-title {
+  color: white;
+}
