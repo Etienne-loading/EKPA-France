@@ -6,16 +6,19 @@
     <div class="sticky-top" style="top:85px;">
       <div>
         <i class="fa-solid fa-location-dot"></i>
-        <% if @formation. %>
+        <p><%= @formation.lieu %></p>
       </div>
       <div>
         <i class="fa-solid fa-building"></i>
+        <p><%= @formation.organisme.nom %></p>
       </div>
       <div>
         <i class="fa-solid fa-stopwatch"></i>
+        <p><%= @formation.duree @formation.periode%></p>
       </div>
       <div>
         <i class="fa-solid fa-euro-sign"></i>
+        <p><%= @formation.prix %></p>
       </div>
     </div>
   </div>
