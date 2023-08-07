@@ -1,33 +1,42 @@
 <div class="banner-show" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('<%= cl_image_path @formation.photo.key, crop: :fill %>')">
-  <h1 class="banner-title"><%= @formation.title %> formation</h1>
+  <h1 class="banner-title"><%= @formation.title %></h1>
 </div>
 <div class="row">
   <div class="bg-primary col-2">
     <div class="sticky-top" style="top:285px;">
-      <div>
-        <i class="fa-solid fa-location-dot"></i>
-        <p><%= @formation.lieu %></p>
+      <div class="d-flex">
+        <div class="center side-light">
+          <i class="fa-solid fa-location-dot big-icon"></i>
+          <p><%= @formation.lieu %></p>
+        </div>
       </div>
-      <div>
-        <i class="fa-solid fa-building"></i>
-        <p><%= @formation.organisme.nom %></p>
+      <div class="d-flex">
+        <div class="center side-light">
+          <i class="fa-solid fa-building big-icon"></i>
+          <p><%= @formation.organisme.nom %></p>
+        </div>
       </div>
-      <div>
-        <i class="fa-solid fa-stopwatch"></i>
-        <p><%= @formation.duree %> <%= @formation.periode %></p>
+      <div class="d-flex">
+        <div class="center side-light">
+          <i class="fa-solid fa-stopwatch big-icon"></i>
+          <p><%= @formation.duree %> <%= @formation.periode %></p>
+        </div>
       </div>
-      <div>
-        <i class="fa-solid fa-euro-sign"></i>
-        <p><%= @formation.code_rncp %></p>
+      <div class="d-flex">
+        <div class="center side-light">
+          <i class="fa-solid fa-euro-sign big-icon"></i>
+          <p><%= @formation.code_rncp %></p>
+        </div>
       </div>
     </div>
   </div>
   <div class="col-10">
     <div class="container">
       <div class="alert-green">
-        <p><i class="fa-solid fa-circle-check"></i>Cette formation est certifiée CPF ! En savoir plus sur le votre <%= link_to "Compte Personnel de Formation", "#" %></p>
+        <i class="fa-solid fa-circle-check"></i>  Cette formation est certifiée CPF ! En savoir plus sur le votre <%= link_to "Compte Personnel de Formation", "#" %>
       </div>
-      <p class="p-5"><%= @formation.description %></p>
+      <h3 class="position-content"><%= @formation.title %></h3>
+      <p class="position-content"><%= @formation.description %></p>
     </div>
   </div>
 </div>
