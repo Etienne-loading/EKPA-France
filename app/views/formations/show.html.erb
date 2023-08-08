@@ -1,33 +1,20 @@
 <div class="banner-show" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('<%= cl_image_path @formation.photo.key, crop: :fill %>')">
   <h1 class="banner-title"><%= @formation.title %></h1>
+  <div>
+    <p class="banner-info">par <%= @formation.organisme.nom %></p>
+  </div>
 </div>
 <div class="row m-0">
-  <div class="bg-side col-2">
-    <div class="sticky-top">
-      <div class="d-flex">
-        <div class="center side-light">
-          <i class="fa-solid fa-location-dot big-icon"></i>
-          <p><%= @formation.lieu %></p>
-        </div>
-      </div>
-      <div class="d-flex">
-        <div class="center side-light">
-          <i class="fa-solid fa-building big-icon"></i>
-          <p><%= @formation.organisme.nom %></p>
-        </div>
-      </div>
-      <div class="d-flex">
-        <div class="center side-light">
-          <i class="fa-solid fa-stopwatch big-icon"></i>
-          <p><%= @formation.duree %> <%= @formation.periode %></p>
-        </div>
-      </div>
-      <div class="d-flex">
-        <div class="center side-light">
-          <i class="fa-solid fa-euro-sign big-icon"></i>
-          <p><%= @formation.code_rncp %></p>
-        </div>
-      </div>
+  <div class="sidebar col-2">
+    <div class="sticky-top size-side">
+      <i class="fa-solid fa-location-dot big-icon"></i>
+      <p class="info-side"><%= @formation.lieu %></p>
+      <i class="fa-solid fa-building big-icon"></i>
+      <p class=""><%= @formation.organisme.nom %></p>
+      <i class="fa-solid fa-stopwatch big-icon"></i>
+      <p class=""><%= @formation.duree %> <%= @formation.periode %></p>
+      <i class="fa-solid fa-euro-sign big-icon"></i>
+      <p class=""><%= @formation.code_rncp %></p>
     </div>
   </div>
   <div class="col-10">

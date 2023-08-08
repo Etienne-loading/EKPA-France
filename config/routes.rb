@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :organismes, only: [:index, :new, :create]
   get '/catalogue', to: 'pages#catalogue', as: :catalogue
   get '/contact', to: 'pages#contact', as: :contact
+  get '/mon_cpf', to: 'pages#cpf', as: :mon_cpf
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
