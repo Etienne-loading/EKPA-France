@@ -1,7 +1,7 @@
 <div class="banner-show" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('<%= cl_image_path @formation.photo.key, crop: :fill %>')">
   <h1 class="banner-title"><%= @formation.title %></h1>
   <div>
-    <p>par <%= @formation.organisme.nom %></p>
+    <p class="banner-info">par <%= @formation.organisme.nom %></p>
   </div>
 </div>
 <div class="row m-0">
