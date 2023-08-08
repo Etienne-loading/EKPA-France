@@ -1,5 +1,5 @@
 class FormationsController < ApplicationController
-  before_action :set_formation, only: [:show]
+  before_action :set_formation, only: [:show, :edit, :update]
   def index
     @formations = Formation.all
   end
@@ -26,7 +26,10 @@ class FormationsController < ApplicationController
   def edit
   end
 
+
   def update
+    @formation.update(formation_params)
+    redirect_to catalogue_path(current_user)
   end
 
   def destroy
