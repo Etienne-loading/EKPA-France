@@ -5,6 +5,7 @@ class PagesController < ApplicationController
   end
 
   def catalogue
+    @formations = Formation.all
   end
 
   def contact
