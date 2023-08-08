@@ -10,24 +10,20 @@
   padding: 24px 48px 0px 48px;
 }
 
-.center {
-  margin: 0 auto;
+.size-side {
+  height: 100vh;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
 }
-
-// .side-light {
-//   color: white;
-// }
 
 .big-icon {
   font-size: 2em;
-  padding-top: 12px;
-}
-
-.row-no-padding {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+  padding-top: 1.6em;
+  margin-bottom: 1em;
+  color: var(--bs-blue);
 }
 
 .bg-side {
-  background-color: aliceblue;
+  background-color: rgb(180, 180, 180);
 }
