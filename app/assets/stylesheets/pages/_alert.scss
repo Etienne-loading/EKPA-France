@@ -14,11 +14,20 @@
   margin: 0 auto;
 }
 
-.side-light {
-  color: white;
-}
+// .side-light {
+//   color: white;
+// }
 
 .big-icon {
   font-size: 2em;
   padding-top: 12px;
+}
+
+.row-no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.bg-side {
+  background-color: aliceblue;
 }
