@@ -14,13 +14,13 @@
           <%= link_to "Nos formations", formations_path(@formations), class: "nav-link me-3 text-primary" %>
         </li>
         <li class="nav-item active link-center">
-          <%= link_to "Mon CPF?", mon_cpf_path(), class: "nav-link me-3" %>
+          <%= link_to "Mon CPF?", mon_cpf_path, class: "nav-link me-3" %>
         </li>
         <li class="nav-item active link-center">
-          <%= link_to "EKPA France", formations_path(@formations), class: "nav-link me-3" %>
+          <%= link_to "EKPA France", ekpa_path, class: "nav-link me-3" %>
         </li>
         <li class="nav-item active link-center">
-          <%= link_to "Nous contacter", contact_path, class: "nav-link me-3" %>
+          <%= link_to "Nous contacter", contact_path, class: "nav-link me-5" %>
         </li>
         <% if user_signed_in? && current_user.admin == true %>
           <li class="nav-item dropdown">
@@ -35,7 +35,6 @@
             </div>
           </li>
         <% elsif user_signed_in? && current_user.admin == false %>
-          <%= link_to "Nous contacter", "/contact" , class:"nav-link me-3 link-center" %>
           <li class="nav-link me-3">
             <a href="#" class="avatar" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <%= image_tag "avatar_default.png", class: "avatar", alt: "dropdown menu" %>
@@ -45,7 +44,6 @@
             </div>
           </li>
         <% else %>
-          <%= link_to "Nous contacter", "/contact" , class:"nav-link me-3 link-center" %>
           <li class="nav-item">
             <%= link_to "Se connecter", new_user_session_path, class: "nav-link" %>
           </li>
