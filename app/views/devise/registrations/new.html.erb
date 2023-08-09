@@ -1,10 +1,9 @@
 <div class="container">
-  <h2>Inscription</h2>
+  <div class="form-inputs">
+    <h2 class="title-position">Inscription</h2>
 
-  <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), data: { turbo: :false }) do |f| %>
-    <%= f.error_notification %>
-
-    <div class="form-inputs">
+    <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), data: { turbo: :false }) do |f| %>
+      <%= f.error_notification %>
       <%= f.input :email,
                   required: true,
                   autofocus: true,
@@ -12,6 +11,7 @@
       <%= f.input :prenom,
                   required: true,
                   autofocus: true,
+                  label: "Prénom",
                   input_html: { autocomplete: "Prénom"} %>
       <%= f.input :nom,
                   required: true,
@@ -24,14 +24,13 @@
                   input_html: { autocomplete: "nouveau mot de passe" } %>
       <%= f.input :password_confirmation,
                   required: true,
-                  label: "confirmation",
+                  label: "Confirmation",
                   input_html: { autocomplete: "nouveau mot de passe" } %>
-    </div>
 
-    <div class="form-actions">
-      <%= f.button :submit, "S'incrire" %>
-    </div>
-  <% end %>
-
-  <%= render "devise/shared/links" %>
+      <div class="form-actions">
+        <%= f.button :submit, "S'incrire", class:"btn btn-primary my-3" %>
+      </div>
+    <% end %>
+    <%= render "devise/shared/links" %>
+  </div>
 </div>
