@@ -31,7 +31,7 @@
         <% end %>
         <div class="my-4">
           <%= link_to "modifier", edit_formation_path(formation), class:"btn btn-primary" %>
-          <%= link_to "supprimer", formation_path(formation), class:"btn btn-danger", data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+          <%= link_to "supprimer", formation_path(formation), class:"btn btn-danger", data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
         </div>
       </div>
     <% end %>
