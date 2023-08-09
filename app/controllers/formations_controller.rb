@@ -5,7 +5,6 @@ class FormationsController < ApplicationController
   end
 
   def show
-    @formation = Formation.find(params[:id])
   end
 
   def new
@@ -26,13 +25,15 @@ class FormationsController < ApplicationController
   def edit
   end
 
-
   def update
     @formation.update(formation_params)
     redirect_to catalogue_path(current_user)
   end
 
   def destroy
+    @formation = Formation.find(params[:id])
+    @formation.destroy
+    redirect_to catalogue_path, status: :see_other
   end
 
   private

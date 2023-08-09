@@ -1,0 +1,12 @@
+<div class="container">
+  <h2 class="title-position">Modifier la formation <strong><%= @formation.title %></strong></h2>
+  <%= simple_form_for @formation do |f| %>
+    <%= f.input :title, label: "Titre" %>
+    <%= f.input :description, label: "Description" %>
+    <%= f.input :duree, label: "Durée" %>
+    <%= f.input :periode, label: "Période" %>
+    <%= f.input :code_rncp, label: "Code RNCP" %>
+    <%= f.input :lieu, label: "Lieu (par défault \"à distance\")" %>
+    <%= f.submit class: "btn btn-primary" %>
+  <% end %>
+</div>
