@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   root to: "pages#home"
 
-  resources :formations, only: [:index, :edit, :show, :new, :create, :destroy]
+  resources :formations, only: [:index, :show, :new, :create, :edit, :update, :destroy]
   resources :blocs, only: [:index]
   resources :organismes, only: [:index, :new, :create]
   get '/catalogue', to: 'pages#catalogue', as: :catalogue
