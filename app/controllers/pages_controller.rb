@@ -12,4 +12,10 @@ class PagesController < ApplicationController
 
   def contact
   end
+
+  def cpf
+  end
+
+  def ekpa
+  end
 end
