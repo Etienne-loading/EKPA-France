@@ -11,7 +11,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
         <li class="nav-item active link-center">
-          <%= link_to "Nos formations", formations_path(@formations), class: "nav-link me-3" %>
+          <%= link_to "Nos formations", formations_path(@formations), class: "nav-link me-3 text-primary" %>
+        </li>
+        <li class="nav-item active link-center">
+          <%= link_to "Mon CPF?", mon_cpf_path(), class: "nav-link me-3" %>
+        </li>
+        <li class="nav-item active link-center">
+          <%= link_to "EKPA France", formations_path(@formations), class: "nav-link me-3" %>
+        </li>
+        <li class="nav-item active link-center">
+          <%= link_to "Nous contacter", contact_path, class: "nav-link me-3" %>
         </li>
         <% if user_signed_in? && current_user.admin == true %>
           <li class="nav-item dropdown">
