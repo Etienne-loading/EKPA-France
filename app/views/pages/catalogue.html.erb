@@ -29,9 +29,9 @@
             <% end %>
           </div>
         <% end %>
-        <div class="my-4 center">
-          <%= link_to "modifier", edit_formation_path(formation), class:"btn btn-primary" %>
-          <%= link_to "supprimer", formation_path(formation), class:"btn btn-danger", data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
+        <div class="my-4 w-50 center d-flex justify-content-between">
+          <%= link_to "modifier", edit_formation_path(formation), class:"btn btn-primary mb-3" %>
+          <%= link_to "supprimer", formation_path(formation), class:"btn btn-danger mb-3", data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
         </div>
       </div>
     <% end %>
