@@ -18,7 +18,7 @@
 }
 
 .big-icon {
-  font-size: 2.4em;
+  font-size: 2.2em;
   padding-top: 1.6em;
   margin-bottom: 0.6em;
   color: var(--bs-blue);
@@ -32,6 +32,12 @@
 .title-position {
   margin-top: 1.6em;
   margin-bottom: 1em;
+}
+
+.title-position-grid {
+  margin-top: 1.6em;
+  margin-bottom: 1em;
+  margin-left: 24px;
 }
 
 .title-form {
@@ -48,3 +54,16 @@
 .italic {
   font-style: italic;
 }
+
+.info-side {
+  font-size: 0.8em;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.center {
+  margin: 0 auto;
+}
+
