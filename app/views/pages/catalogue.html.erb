@@ -1,10 +1,10 @@
 <div class="container">
-  <h1>Catalogue</h1>
+  <h1 class="title-position-grid">Catalogue</h1>
   <div class="card-container">
     <% @formations.each do |formation|%>
       <div>
-        <%= link_to formation_path(formation), class: "card-link m-auto my-4" do %>
-          <div class="card-formation">
+        <%= link_to formation_path(formation), class: "card-link my-4" do %>
+          <div class="card-formation center">
             <% if formation.photo != false %>
               <div class="card-img" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('<%= cl_image_path formation.photo.key, height: 300, crop: :fill %>')">
               </div>
@@ -29,7 +29,7 @@
             <% end %>
           </div>
         <% end %>
-        <div class="my-4">
+        <div class="my-4 center">
           <%= link_to "modifier", edit_formation_path(formation), class:"btn btn-primary" %>
           <%= link_to "supprimer", formation_path(formation), class:"btn btn-danger", data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
         </div>

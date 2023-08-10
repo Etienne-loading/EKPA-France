@@ -1,33 +1,35 @@
 <div class="container">
-  <h1 class="my-3">Toutes nos formations</h1>
+  <h1 class="title-position-grid">Toutes nos formations</h1>
   <div class="card-container">
     <% @formations.each do |formation|%>
-      <%= link_to formation_path(formation), class: "card-link m-auto my-4" do %>
-        <div class="card-formation">
-          <% if formation.photo != false %>
-            <div class="card-img" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('<%= cl_image_path formation.photo.key, height: 300, crop: :fill %>')">
-            </div>
-            <div class="d-flex card-info">
-              <div class="content-card">
-                <div class="title-card">
-                  <%= formation.title %>
+      <div>
+        <%= link_to formation_path(formation), class: "card-link my-4" do %>
+          <div class="card-formation mb-5 center">
+            <% if formation.photo != false %>
+              <div class="card-img" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('<%= cl_image_path formation.photo.key, height: 300, crop: :fill %>')">
+              </div>
+              <div class="d-flex card-info">
+                <div class="content-card">
+                  <div class="title-card">
+                    <%= formation.title %>
+                  </div>
+                  <div>
+                    <p>par <%= formation.organisme.nom %></p>
+                  </div>
                 </div>
                 <div>
-                  <p>par <%= formation.organisme.nom %></p>
+                  <div class="element-card">
+                    <%= formation.duree %>
+                  </div>
+                  <div class="element-card">
+                    <%= formation.periode %>
+                  </div>
                 </div>
               </div>
-              <div>
-                <div class="element-card">
-                  <%= formation.duree %>
-                </div>
-                <div class="element-card">
-                  <%= formation.periode %>
-                </div>
-              </div>
-            </div>
-          <% end %>
-        </div>
-      <% end %>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
     <% end %>
   </div>
 </div>

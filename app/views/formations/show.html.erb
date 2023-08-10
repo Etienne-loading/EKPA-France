@@ -5,19 +5,19 @@
   </div>
 </div>
 <div class="row m-0">
-  <div class="sidebar col-2">
+  <div class="sidebar col-1 full-height">
     <div class="sticky-top size-side">
       <i class="fa-solid fa-location-dot big-icon"></i>
       <p class="info-side"><%= @formation.lieu %></p>
       <i class="fa-solid fa-building big-icon"></i>
-      <p class=""><%= @formation.organisme.nom %></p>
+      <p class="info-side"><%= @formation.organisme.nom %></p>
       <i class="fa-solid fa-stopwatch big-icon"></i>
-      <p class=""><%= @formation.duree %> <%= @formation.periode %></p>
+      <p class="info-side"><%= @formation.duree %> <%= @formation.periode %></p>
       <i class="fa-solid fa-euro-sign big-icon"></i>
-      <p class=""><%= @formation.code_rncp %></p>
+      <p class="info-side"><%= @formation.code_rncp %></p>
     </div>
   </div>
-  <div class="col-10">
+  <div class="col-11">
     <div class="container row-no-padding">
       <div class="alert-green">
         <i class="fa-solid fa-circle-check"></i>  Cette formation est certifiée CPF ! En savoir plus sur le votre <%= link_to "Compte Personnel de Formation", "#" %>
