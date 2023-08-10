@@ -1,7 +1,9 @@
 <div class="container">
-  <h1 class="text-primary title-position">Ajouter un nouvel organisme au catalogue</h1>
-  <%= simple_form_for @organisme do |f| %>
-    <%= f.input :nom, label: false, placeholder: "Nom de l'organisme", input_html: { class: "mt-4" }%>
-    <%= f.submit "Ajouter", class: "btn btn-primary mt-3 btn-margin-bot" %>
-  <% end %>
+  <div class="form-inputs">
+    <h1 class="title-form">Ajouter un nouvel organisme au catalogue</h1>
+    <%= simple_form_for @organisme do |f| %>
+      <%= f.input :nom, label: false, placeholder: "Nom de l'organisme", input_html: { class: "mt-4" }%>
+      <%= f.submit "Ajouter", class: "btn btn-primary mt-3 btn-margin-y" %>
+    <% end %>
+  </div>
 </div>
