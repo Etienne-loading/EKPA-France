@@ -1,14 +1,16 @@
 <div class="container">
-  <h1 class="text-primary my-3">Ajouter une nouvelle formation au catalogue</h1>
-  <p>Attention, dans le cas d'une formation dispensée par un nouvel organisme non répertorié, vous ne pourrez pas créer cette formation. Veuillez dans ce cas créer l'organisme avant la formation.</p>
-  <%= simple_form_for @formation do |f| %>
-    <%= f.input :title, label: false, placeholder: "Titre", input_html: { class: "mt-4" }%>
-    <%= f.input :description, as: :text, label: false, placeholder: "Description", input_html: { class: "" }  %>
-    <%= f.input :duree, label: false,placeholder: "Durée", input_html: { class: "" }%>
-    <%= f.input :periode, error: "Champ obligatoire", placeholder: "Périodes", label: false, input_html: { class: "" } %>
-    <%= f.collection_select :organisme_id, Organisme.all, :id, :nom %>
-    <%= f.input :code_rncp, label: false, placeholder: "Code RNCP de la formation", input_html: { class: "" } %>
-    <%= f.input :photo, as: :file %>
-    <%= f.submit "Ajouter", class: "btn btn-primary mt-3 btn-margin-bot" %>
-  <% end %>
+  <div class="form-inputs">
+    <h1 class="title-form">Ajouter une nouvelle formation au catalogue</h1>
+    <p class="italic">Attention, dans le cas d'une formation dispensée par un nouvel organisme non répertorié, vous ne pourrez pas créer cette formation. Veuillez dans ce cas créer l'organisme avant la formation.</p>
+    <%= simple_form_for @formation do |f| %>
+      <%= f.input :title, label: false, placeholder: "Titre", input_html: { class: "mt-4" }%>
+      <%= f.input :description, as: :text, label: false, placeholder: "Description", input_html: { :rows => 10 }  %>
+      <%= f.input :duree, label: false,placeholder: "Durée", input_html: { class: "" }%>
+      <%= f.input :periode, error: "Champ obligatoire", placeholder: "Périodes", label: false, input_html: { class: "" } %>
+      <%= f.collection_select :organisme_id, Organisme.all, :id, :nom %>
+      <%= f.input :code_rncp, label: false, placeholder: "Code RNCP de la formation", input_html: { class: "" } %>
+      <%= f.input :photo, as: :file %>
+      <%= f.submit "Ajouter", class: "btn btn-primary mt-3 btn-margin-bot" %>
+    <% end %>
+  </div>
 </div>
