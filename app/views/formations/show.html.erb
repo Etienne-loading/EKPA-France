@@ -24,6 +24,9 @@
       </div>
       <h3 class="position-content"><%= @formation.title %></h3>
       <p class="position-content"><%= @formation.description %></p>
+      <div>
+        <p>Contactez-nous pour construire votre projet : <%= link_to "Contacter par mail", contact_path %> | <%= link_to "Contacter par téléphone", contact_path %></p>
+      </div>
     </div>
   </div>
 </div>
