@@ -24,8 +24,22 @@
       </div>
       <h3 class="position-content"><%= @formation.title %></h3>
       <p class="position-content"><%= @formation.description %></p>
-      <div>
-        <p>Contactez-nous pour construire votre projet : <%= link_to "Contacter par mail", contact_path %> | <%= link_to "Contacter par téléphone", contact_path %></p>
+      <div  class="position-content">
+        <div class="w-75 center bg-secondary p-3">
+          <p class="medium-font">Contactez-nous pour construire votre projet, nos équipes sont a votre écoute : </p>
+          <div class="d-flex justify-content-center">
+            <%= link_to contact_path do %>
+              <button type="button" class="btn btn-primary me-2">
+                <i class="fa-solid fa-envelope px-3"></i>
+              </button>
+            <% end %>
+            <%= link_to contact_path do %>
+              <button type="button" class="btn btn-primary ms-2">
+                <i class="fa-solid fa-phone px-3"></i>
+              </button>
+            <% end %>
+          </div>
+        </div>
       </div>
     </div>
   </div>
