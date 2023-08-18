@@ -28,21 +28,6 @@
         <li>Puis nous contacter !</li>
       </ul>
     </div>
-    <div class="duo-info">
-      <div class="col-6">
-        <div class="w-75 center light-font">
-          <h4 class="mb-4">Découvrir toutes nos formations</h4>
-          <p>EKPA France propose plusieurs formations qui pourraient vous convenir. Si vous avez des questions nous vous invitons à nous contacter. Consultez notre catalogue de formation</p>
-          <%= link_to "Toutes les formations", formations_path, class:"btn btn-primary" %>
-        </div>
-      </div>
-      <div class="col-6">
-        <div class="w-75 center light-font">
-          <h4 class="mb-4">Discutons de votre projet</h4>
-          <p>Nos équipes vous accompagnent dans vos projets de formation et dans l'utilisation de votre compte CPF comme moyen de financement. Nous sommes à votre écoute</p>
-          <%= link_to "Contactez-nous", contact_path, class:"btn btn-primary" %>
-        </div>
-      </div>
-    </div>
+    <%= render 'shared/contactduo'%>
   </div>
 </div>
