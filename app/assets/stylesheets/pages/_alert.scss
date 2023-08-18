@@ -94,9 +94,29 @@
 }
 
 .box-small-light {
-  height: 20px;
+  height: 80px;
   background-color: ($light-blue);
-  margin-top: 2em;
-  padding: 6vh;
-  margin-bottom: 1em;
+  margin: 0em 0em 2em 0em;
+  align-items: center;
+  border-radius: 4px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.font-big {
+  font-size: 1.4em;
+}
+
+.column-image {
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url("https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1324&q=80");
+  background-size: cover;
+  background-position: center;
+  height: calc(100% - 2em);
+  border-radius: 4px;
+}
+
+.med-icon {
+  font-size: 1.6em;
 }
