@@ -1,5 +1,5 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon px-3">
-  <div class="container-fluid">
+  <div class="container-fluid ms-5">
     <%= link_to root_path, class: "navbar-brand" do %>
       <%= image_tag "logo_EKPA.png" %>
     <% end %>
@@ -20,11 +20,11 @@
           <%= link_to "EKPA France", ekpa_path, class: "nav-link me-3" %>
         </li>
         <li class="nav-item active link-center">
-          <%= link_to "Nous contacter", contact_path, class: "nav-link me-5" %>
+          <%= link_to "Nous contacter", contact_path, class: "nav-link me-3" %>
         </li>
         <% if user_signed_in? && current_user.admin == true %>
           <li class="nav-item dropdown">
-          <a href="#" class="avatar" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a href="#" class="avatar center" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <%= image_tag "avatar_default.png", class: "avatar", alt: "dropdown menu" %>
           </a>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
