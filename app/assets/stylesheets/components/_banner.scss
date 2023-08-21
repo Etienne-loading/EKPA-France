@@ -2,13 +2,13 @@
   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("https://images.unsplash.com/photo-1543269664-56d93c1b41a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
   background-size: cover;
   background-position: center;
-  padding: 130px 90px;
+  padding: 120px 100px;
   margin: 0px;
   height: 60vh;
   color: aliceblue;
   a {
-    background-color: aliceblue;
-    color: var(--bs-blue);
+    background-color: $blue;
+    color: white;
     padding: 12px 20px;
   }
 
