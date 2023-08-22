@@ -1,3 +1,8 @@
+#page-container {
+  position: relative;
+  min-height: 50vh;
+}
+
 .footer {
   background: var(--bs-blue);
   display: flex;
