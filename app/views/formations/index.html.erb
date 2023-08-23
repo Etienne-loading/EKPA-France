@@ -3,7 +3,7 @@
   <div class="card-container">
     <% @formations.each do |formation|%>
       <div>
-        <%= link_to formation_path(formation), class: "card-link my-4" do %>
+        <%= link_to formation_path(formation), class: "my-4" do %>
           <div class="card-formation mb-5 center">
             <% if formation.photo != false %>
               <div class="card-img" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('<%= cl_image_path formation.photo.key, height: 300, crop: :fill %>')">

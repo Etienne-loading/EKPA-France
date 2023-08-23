@@ -8,7 +8,22 @@
 </div>
 <div class="bloc-small">
   <div class="container">
-    <p><strong>"</strong> Ouvrez-vous à d’autres univers avec les formations financées par le CPF. Exploitez vos passions ou approfondissez dans vos domaines d’expertises grâce à EKPA France. Certifié par l’Etat, nous nous engagons à vous accompagner dans votre formation. Consultez notre section Tout savoir sur le CPF pour en savoir plus. <strong>"</strong></p>
+    <p>Ouvrez-vous à d’autres univers avec les formations financées par le CPF !</p>
+    <div class="row">
+      <div class="col-4 square">
+        <i class="fa-solid fa-dumbbell"></i>
+        <p>Devenez un expert</p>
+      </div>
+      <div class=" col-4 square">
+        <i class="fa-solid fa-binoculars"></i>
+        <p>Découvrez un univers</p>
+      </div>
+      <div class="col-4 square">
+        <i class="fa-solid fa-chart-pie"></i>
+        <p>Complétez votre profil</p>
+      </div>
+    </div>
+    <p>Exploitez vos passions ou approfondissez dans vos domaines d’expertises grâce à EKPA France. Certifié par l’Etat, nous nous engagons à vous accompagner dans votre formation. Consultez notre section Tout savoir sur le CPF pour en savoir plus.</p>
   </div>
 </div>
 <div class="container">
@@ -17,8 +32,8 @@
     <div class="card-container">
       <% @formations.sample(3).each do |formation|%>
         <div>
-          <%= link_to formation_path(formation), class: "card-link m-auto my-4" do %>
-            <div class="card-formation">
+          <%= link_to formation_path(formation), class: "my-4" do %>
+            <div class="card-formation mb-5 center">
               <% if formation.photo != false %>
                 <div class="card-img" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('<%= cl_image_path formation.photo.key, height: 300, crop: :fill %>')">
                 </div>
