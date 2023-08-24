@@ -24,11 +24,18 @@
   flex-direction: column;
 }
 
-.big-icon {
+.med-icon {
   font-size: 2.2em;
   padding-top: 1.6em;
   margin-bottom: 0.6em;
   color: var(--bs-blue);
+}
+
+.big-icon {
+  font-size: 3.2em;
+  padding-top: 0.6em;
+  margin-bottom: 0.6em;
+  color: rgb(232, 232, 190);
 }
 
 .sidebar {
