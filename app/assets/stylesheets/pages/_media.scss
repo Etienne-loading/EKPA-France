@@ -2,11 +2,20 @@
   .card-container {
     grid-template-columns: 1fr 1fr;
   }
-  
+  .banner {
+    padding: 80px 60px;
+  }
 }
 
 @media(max-width: 768px) {
   .card-container {
     grid-template-columns: 1fr;
+  }
+  .banner {
+    padding: 60px 40px;
+    
+    h1 {
+      text-align: justify;
+    }
   }
 }
