@@ -25,9 +25,13 @@
 }
 
 .med-icon {
+  border-radius: 50%;
+  background-color: white;
+  height: 70px;
+  width: 70px;
+  margin: 0.6em 1em 0.6em 1em;
   font-size: 2.2em;
   color: var(--bs-blue);
-  margin: 0 auto;
   text-align: center;
   vertical-align: middle;
   display: inline-block;
@@ -122,10 +126,6 @@
   border-radius: 4px;
 }
 
-.med-icon {
-  font-size: 1.6em;
-}
-
 .img-full {
   background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url("https://images.unsplash.com/photo-1622260872090-5c558010a67e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80");
   background-size: cover;
@@ -169,4 +169,8 @@
 
 .fa-vc {
   line-height: inherit !important;
+}
+
+.box-ref {
+  display: table-cell;
 }
