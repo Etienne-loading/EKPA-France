@@ -123,8 +123,7 @@
   background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url("https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1324&q=80");
   background-size: cover;
   background-position: center;
-  height: calc(100% - 2em);
-  border-radius: 4px;
+  height: 100%;
 }
 
 .img-full {
