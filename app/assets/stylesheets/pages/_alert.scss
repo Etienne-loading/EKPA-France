@@ -7,7 +7,7 @@
 }
 
 .alert-info {
-  background-color: rgba(52, 37, 120, 0.2);
+  background-color: rgba(54, 91, 130, 0.2);
   padding: 2em 3em;
   border-radius: 4px;
   margin-top: 2em;
@@ -47,7 +47,6 @@
 
 .sidebar {
   background-color: rgb(220, 220, 220);
-  height: 100vh;
 }
 
 .title-position {
@@ -94,7 +93,7 @@
 }
 
 .bg-ekpa {
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../../assets/images/human.png");
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
   background-size: cover;
   background-position: center;
   height: 30vh;
@@ -139,7 +138,7 @@
 }
 
 .card-process {
-  background-color: rgba(52, 37, 120, 0.2);
+  background-color: rgba(54, 91, 130, 0.3);
   padding: 2em 2em 2em 2em;
   margin: 6px;
   border-radius: 4px;
