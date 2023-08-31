@@ -25,20 +25,19 @@
     <div class="column-image">
     </div>
   </div>
-  <div class="col-12">
+  <div class="col-12 bg-light">
     <div class="w-75 center">
       <h1 class="title-position mb-0">Formulaire de contact</h1>
       <%= form_for @contact do |f| %>
         <div class="p-5">
-          <%= f.label 'Votre nom' %></br>
-          <%= f.text_field  :name, cols: 80, required: true, class: "" %></br>
+          <%= f.label 'Votre nom', class:"text-primary" %></br>
+          <%= f.text_field  :name, required: true, class: "form-fields-1" %></br>
 
-          <%= f.label 'Votre email' %></br>
-          <%= f.text_field :email, cols: 80, required: true, class: "" %></br>
+          <%= f.label 'Votre email', class:"text-primary" %></br>
+          <%= f.text_field :email, required: true, class: "form-fields-1" %></br>
 
-          <%= f.label "Message" %></br>
-          <%= f.text_area :message, rows: 8, cols: 100, required: true, class: "",
-                placeholder: " Envoyer un message..."%></br>
+          <%= f.label "Message", class:"text-primary" %></br>
+          <%= f.text_area :message, rows: 8, required: true, class: "form-fields-2"%></br>
 
           <div class= "d-none">
             <%= f.label :nickname %>
