@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home ]
+  skip_before_action :authenticate_user!, only: [ :home, :catalogue, :contact, :cpf, :ekpa ]
   before_action :set_formation, only: [:show, :edit, :update, :destroy]
 
   def home
@@ -11,6 +11,7 @@ class PagesController < ApplicationController
   end
 
   def contact
+    @contact = Contact.new
   end
 
   def cpf
