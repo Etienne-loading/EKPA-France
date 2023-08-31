@@ -9,6 +9,11 @@ a {
   padding: 1em 2em 1em 2em;
   border-radius: 4px;
   color: white;
+  box-shadow: white 2px 3px 1px 1px;
+}
+
+.btn-main:hover {
+  background-color: rgb(40, 67, 95);
 }
 
 .bloc-small {
