@@ -13,9 +13,29 @@
   }
   .banner {
     padding: 60px 40px;
-    
+
     h1 {
       text-align: justify;
     }
+  }
+  .img-full {
+    display: none;
+  }
+  .duo-info {
+    display: block;
+    .btn-primary {
+      margin-bottom: 3em;
+    }
+  }
+  .column-image {
+    display: none;
+  }
+  .icon-orga {
+    display: block;
+    text-align: center;
+  }
+
+  .bg-ekpa {
+    width: 100%;
   }
 }
