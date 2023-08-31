@@ -25,27 +25,29 @@
     <div class="column-image">
     </div>
   </div>
-  <div class="col-12" style="height:80vh;">
-    <h1>Contact Form</h1>
-    <%= form_for @contact do |f| %>
-      <div class="col-md-6">
-        <%= f.label :name %></br>
-        <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
+  <div class="col-12">
+    <div class="w-75 center">
+      <h1 class="title-position mb-0">Formulaire de contact</h1>
+      <%= form_for @contact do |f| %>
+        <div class="p-5">
+          <%= f.label 'Votre nom' %></br>
+          <%= f.text_field  :name, cols: 80, required: true, class: "" %></br>
 
-        <%= f.label :email %></br>
-        <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br>
+          <%= f.label 'Votre email' %></br>
+          <%= f.text_field :email, cols: 80, required: true, class: "" %></br>
 
-        <%= f.label :message %></br>
-        <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area",
-              placeholder: "Send me a message"%></br>
+          <%= f.label "Message" %></br>
+          <%= f.text_area :message, rows: 8, cols: 100, required: true, class: "",
+                placeholder: " Envoyer un message..."%></br>
 
-        <div class= "d-none">
-          <%= f.label :nickname %>
-          <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+          <div class= "d-none">
+            <%= f.label :nickname %>
+            <%= f.text_field :nickname %>
+          </div>
+
+          <%= f.submit 'Envoyer', class: 'btn btn-primary' %>
         </div>
-
-        <%= f.submit 'Send Message', class: 'btn btn-primary' %>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
   </div>
 </div>
