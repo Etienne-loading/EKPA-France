@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get '/contact', to: 'pages#contact', as: :contact
   get '/mon_cpf', to: 'pages#cpf', as: :mon_cpf
   get '/ekpafrance', to: 'pages#ekpa', as: :ekpa
+  resources :contacts, only: [:new, :create]
 end
