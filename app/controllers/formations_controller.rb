@@ -1,4 +1,5 @@
 class FormationsController < ApplicationController
+  skip_before_action :authenticate_user!, only: [ :index, :show ]
   before_action :set_formation, only: [:show, :edit, :update]
   def index
     @formations = Formation.all
