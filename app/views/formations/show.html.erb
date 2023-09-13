@@ -1,6 +1,3 @@
-<% content_for :meta_title, "#{@formation.title} is on #{DEFAULT_META["meta_product_name"]}" %>
-<% content_for :meta_description, @formation.description %>
-<% content_for :meta_image, cl_image_path(@formation.photo.key) if @formation.photo.attached? %>
 <div class="banner-show" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('<%= cl_image_path @formation.photo.key, crop: :fill %>')">
   <h1 class="banner-title"><%= @formation.title %></h1>
   <div>
