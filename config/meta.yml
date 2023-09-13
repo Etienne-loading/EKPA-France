@@ -1,0 +1,5 @@
+meta_name: "EKPA France"
+meta_title: "Ekpa vous accompgane dans vos projets de formations"
+meta_description: "EKPA France croit en l'apprentissage en ligne interactif et personnalisé. Nos formations sont conçues pour offrir une expérience d'apprentissage engageante, combinant des ressources multimédias, des exercices pratiques et des évaluations pour mesurer les progrès des apprenants tout en pouvant être accompagnés par un professionnel tout au long de la formation."
+meta_image: "logo_EKPA.png" # should exist in `app/assets/images/`
+twitter_account: "@EKPAFORMATION"   # required for Twitter Cards
