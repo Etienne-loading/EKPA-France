@@ -7,20 +7,20 @@
   <% if browser.device.mobile? %>
     <div class="row">
       <div class="col-6">
-        <i class="fa-solid fa-location-dot little-icon"></i>
-        <p class="info-box"><%= @formation.lieu %></p>
+        <i class="fa-solid fa-location-dot med-icon center"></i>
+        <p class="info-box text-center"><%= @formation.lieu %></p>
       </div>
       <div class="col-6">
-        <i class="fa-solid fa-building med-icon"></i>
-        <p class="info-box"><%= @formation.organisme.nom %></p>
+        <i class="fa-solid fa-building med-icon center"></i>
+        <p class="info-box text-center"><%= @formation.organisme.nom %></p>
       </div>
       <div class="col-6">
-        <i class="fa-solid fa-stopwatch med-icon"></i>
-        <p class="info-box"><%= @formation.duree %> <%= @formation.periode %></p>
+        <i class="fa-solid fa-stopwatch med-icon center"></i>
+        <p class="info-box text-center"><%= @formation.duree %> <%= @formation.periode %></p>
       </div>
       <div class="col-6">
-        <i class="fa-solid fa-barcode med-icon"></i>
-        <p class="info-box"><%= @formation.code_rncp %></p>
+        <i class="fa-solid fa-barcode med-icon center"></i>
+        <p class="info-box text-center"><%= @formation.code_rncp %></p>
       </div>
     </div>
     <div class="col-12">
