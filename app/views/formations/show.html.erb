@@ -26,7 +26,7 @@
       </div>
     </div>
   <% else %>
-    <%# <%= render partial: 'desktop_show' %>
+  <% raise %>
     <div class="row m-0">
       <div class="sidebar col-1 full-height">
         <div class="sticky-top size-side">
@@ -40,7 +40,6 @@
           <p class="info-side"><%= @formation.code_rncp %></p>
         </div>
       </div>
-      <%# <%= render partial: 'mobile_show' %>
       <div class="col-11">
         <div class="container row-no-padding">
           <div class="alert-green">
