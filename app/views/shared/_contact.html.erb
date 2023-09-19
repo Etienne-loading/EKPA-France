@@ -1,19 +1,17 @@
 <div  class="position-content">
-  <div class="center bg-ekpa mb-4 p-5">
-    <div class="w-75 center">
-      <p class="medium-font px-2">Contactez-nous pour construire votre projet, nos équipes sont a votre écoute : </p>
-      <div class="d-flex justify-content-center">
-        <%= link_to contact_path do %>
-          <button type="button" class="btn btn-primary me-2">
-            <i class="fa-solid fa-envelope px-3"></i>
-          </button>
-        <% end %>
-        <%= link_to contact_path do %>
-          <button type="button" class="btn btn-primary ms-2">
-            <i class="fa-solid fa-phone px-3"></i>
-          </button>
-        <% end %>
-      </div>
+  <div class="center bg-ekpa mb-4 p-5 center">
+    <p class="medium-font px-2 text-center">Contactez-nous pour construire votre projet, nos équipes sont a votre écoute : </p>
+    <div class="d-flex justify-content-center mb-2">
+      <%= link_to contact_path do %>
+        <button type="button" class="btn btn-primary me-2">
+          <i class="fa-solid fa-envelope px-3"></i>
+        </button>
+      <% end %>
+      <%= link_to contact_path do %>
+        <button type="button" class="btn btn-primary ms-2 mb-3">
+          <i class="fa-solid fa-phone px-3"></i>
+        </button>
+      <% end %>
     </div>
   </div>
 </div>
