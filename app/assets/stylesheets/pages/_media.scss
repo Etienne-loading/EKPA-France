@@ -5,6 +5,14 @@
   .banner {
     padding: 80px 60px;
   }
+
+  .sidebar {
+    display: none;
+  }
+
+  .icon-bar {
+    display: block;
+  }
 }
 
 @media(max-width: 768px) {
