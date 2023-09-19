@@ -38,6 +38,20 @@
   display: inline-block;
 }
 
+.little-icon {
+  border-radius: 50%;
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  margin: 0.6em 0.8em 0.6em 0.8em;
+  font-size: 2em;
+  color: var(--bs-blue);
+  line-height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+}
+
 .big-icon {
   font-size: 3.2em;
   padding-top: 0.6em;
@@ -191,5 +205,5 @@
 
 .contact-box {
   width: 75%;
-  
+
 }

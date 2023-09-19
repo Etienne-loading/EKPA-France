@@ -5,15 +5,23 @@
   </div>
 </div>
   <% if browser.device.mobile? %>
-    <div class="icon-bar">
-      <i class="fa-solid fa-location-dot med-icon"></i>
-      <p class="info-side"><%= @formation.lieu %></p>
-      <i class="fa-solid fa-building med-icon"></i>
-      <p class="info-side"><%= @formation.organisme.nom %></p>
-      <i class="fa-solid fa-stopwatch med-icon"></i>
-      <p class="info-side"><%= @formation.duree %> <%= @formation.periode %></p>
-      <i class="fa-solid fa-barcode med-icon"></i>
-      <p class="info-side"><%= @formation.code_rncp %></p>
+    <div class="row">
+      <div class="col-6">
+        <i class="fa-solid fa-location-dot little-icon"></i>
+        <p class="info-box"><%= @formation.lieu %></p>
+      </div>
+      <div class="col-6">
+        <i class="fa-solid fa-building med-icon"></i>
+        <p class="info-box"><%= @formation.organisme.nom %></p>
+      </div>
+      <div class="col-6">
+        <i class="fa-solid fa-stopwatch med-icon"></i>
+        <p class="info-box"><%= @formation.duree %> <%= @formation.periode %></p>
+      </div>
+      <div class="col-6">
+        <i class="fa-solid fa-barcode med-icon"></i>
+        <p class="info-box"><%= @formation.code_rncp %></p>
+      </div>
     </div>
     <div class="col-12">
       <div class="container row-no-padding">
@@ -26,7 +34,6 @@
       </div>
     </div>
   <% else %>
-  <% raise %>
     <div class="row m-0">
       <div class="sidebar col-1 full-height">
         <div class="sticky-top size-side">
