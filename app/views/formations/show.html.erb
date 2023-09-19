@@ -4,9 +4,8 @@
     <p class="banner-info">par <%= @formation.organisme.nom %></p>
   </div>
 </div>
-<div class="row m-0">
-  <div class="sidebar col-1 full-height">
-    <div class="sticky-top size-side">
+  <% if browser.device.mobile? %>
+    <div class="icon-bar">
       <i class="fa-solid fa-location-dot med-icon"></i>
       <p class="info-side"><%= @formation.lieu %></p>
       <i class="fa-solid fa-building med-icon"></i>
@@ -16,15 +15,41 @@
       <i class="fa-solid fa-barcode med-icon"></i>
       <p class="info-side"><%= @formation.code_rncp %></p>
     </div>
-  </div>
-  <div class="col-11">
-    <div class="container row-no-padding">
-      <div class="alert-green">
-        <i class="fa-solid fa-circle-check"></i>  Cette formation est certifiée CPF ! En savoir plus sur le votre <%= link_to "Compte Personnel de Formation", mon_cpf_path %>
+    <div class="col-12">
+      <div class="container row-no-padding">
+        <div class="alert-green">
+          <i class="fa-solid fa-circle-check"></i>  Cette formation est certifiée CPF ! En savoir plus sur le votre <%= link_to "Compte Personnel de Formation", mon_cpf_path %>
+        </div>
+        <h3 class="position-content"><%= @formation.title %></h3>
+        <p class="position-content"><%= @formation.description %></p>
+        <%= render "shared/contact" %>
       </div>
-      <h3 class="position-content"><%= @formation.title %></h3>
-      <p class="position-content"><%= @formation.description %></p>
-      <%= render "shared/contact" %>
     </div>
-  </div>
+  <% else %>
+  <% raise %>
+    <div class="row m-0">
+      <div class="sidebar col-1 full-height">
+        <div class="sticky-top size-side">
+          <i class="fa-solid fa-location-dot med-icon"></i>
+          <p class="info-side"><%= @formation.lieu %></p>
+          <i class="fa-solid fa-building med-icon"></i>
+          <p class="info-side"><%= @formation.organisme.nom %></p>
+          <i class="fa-solid fa-stopwatch med-icon"></i>
+          <p class="info-side"><%= @formation.duree %> <%= @formation.periode %></p>
+          <i class="fa-solid fa-barcode med-icon"></i>
+          <p class="info-side"><%= @formation.code_rncp %></p>
+        </div>
+      </div>
+      <div class="col-11">
+        <div class="container row-no-padding">
+          <div class="alert-green">
+            <i class="fa-solid fa-circle-check"></i>  Cette formation est certifiée CPF ! En savoir plus sur le votre <%= link_to "Compte Personnel de Formation", mon_cpf_path %>
+          </div>
+          <h3 class="position-content"><%= @formation.title %></h3>
+          <p class="position-content"><%= @formation.description %></p>
+          <%= render "shared/contact" %>
+        </div>
+      </div>
+    </div>
+  <% end %>
 </div>

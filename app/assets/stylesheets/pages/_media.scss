@@ -5,6 +5,14 @@
   .banner {
     padding: 80px 60px;
   }
+
+  .sidebar {
+    display: none;
+  }
+
+  .icon-bar {
+    display: block;
+  }
 }
 
 @media(max-width: 768px) {
@@ -42,5 +50,9 @@
 
   .contact-box {
     width: 100%;
+  }
+
+  .medium-font {
+    font-size: 0.8em;
   }
 }
