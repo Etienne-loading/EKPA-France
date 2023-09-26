@@ -9,7 +9,7 @@
       <p>Le CPF est accessible à partir de 16 ans jusqu’à la retraite y compris en période de chômage. Vous pouvez donc vous formez seul grâce à votre compte formation <a href="https://www.moncompteformation.gouv.fr">www.moncompteformation.gouv.fr</a>. Vous disposez d'une enveloppe budgétaire relative à votre nombre de mois travaillés en tant que salarié (déclaré bien sûr).</p>
       <p>L'enveloppe varie de 500 à 8 000 € selon le profil et est réalimentée tous les ans selon votre activité professionnelle. Nos formations sont toutes finançables par le CPF, ce qui permet de vous former et d’obtenir un diplôme reconnu par l’Etat.</p>
     </div>
-    <div>
+    <div class="schema-destop" >
       <h3 class="mt-5 mb-3">Comment ça marche le CPF ?</h3>
       <div class="progress-container center mt-8">
         <div class="progress" id="progress"></div>
@@ -23,10 +23,17 @@
         <div class="col-4 card-process">Demander un finacement et valider son dossier sur la plateforme <a href="https://www.moncompteformation.gouv.fr", class="strong-link">Mon Compte Formation</a></div>
       </div>
     </div>
+    <div class="schema-mobile">
+      <div class="row">
+        <div class="card-process-m"><p class="text-justify"><%= image_tag("number-1.png", alt: "Step one", class:"img-number") %><br>Créer son compte CPF sur <a href="https://www.moncompteformation.gouv.fr", class="strong-link">Mon Compte Formation</a> en suivant les étapes indiquées</p></div>
+        <div class="card-process-m"><%= image_tag("number-2.png", alt: "Step two", class:"img-number") %><br>Se renseigner sur notre catalogue et choisir sa <%= link_to 'formation', formations_path, class:"strong-link" %>, pour toute question suplémentaire contactez nous</div>
+        <div class="card-process-m"><%= image_tag("number-3.png", alt: "Step three", class:"img-number") %><br>Demander un finacement et valider son dossier sur la plateforme <a href="https://www.moncompteformation.gouv.fr", class="strong-link">Mon Compte Formation</a></div>
+      </div>
+    </div>
     <div class="alert-info mb-5">
       <h3>A savoir !</h3>
-      <p>Vous pouvez demander à votre employeur de vous financer votre formation. Votre employeur peut mobiliser auprès de son <strong class="text-primary">OPCO</strong> un dispositif de financement permettant de prendre en charge tout, ou une partie du montant de la formation que vous souhaitez suivre.</p>
-      <p>Les services <strong class="text-primary">Pôle Emploi</strong> peuvent eux aussi débloquer des financements pour vous permettre de suivre une formation. La formation doit être en rapport à votre objectif professionnel. Plus simplement : la formation doit vous permettre de retrouver un emploi après l’obtention de votre diplôme (reconnu par l’Etat) !</p>
+      <p>Vous pouvez demander à votre employeur de vous financer votre formation. Votre employeur peut mobiliser auprès de son <strong>OPCO</strong> un dispositif de financement permettant de prendre en charge tout, ou une partie du montant de la formation que vous souhaitez suivre.</p>
+      <p>Les services <strong>Pôle Emploi</strong> peuvent eux aussi débloquer des financements pour vous permettre de suivre une formation. La formation doit être en rapport à votre objectif professionnel. Plus simplement : la formation doit vous permettre de retrouver un emploi après l’obtention de votre diplôme (reconnu par l’Etat) !</p>
       <p>Pour connaître toutes les modalités de financement possibles, rapprochez-vous de votre conseiller Pôle Emploi.</p>
     </div>
     <%= render 'shared/contactduo' %>
