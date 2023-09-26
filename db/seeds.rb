@@ -28,6 +28,14 @@ user = User.create!(
   admin: true
 )
 
+user = User.create!(
+  prenom: "Alexandre",
+  nom: "Lanusse",
+  email: "ekpafr@gmail.com",
+  password: "EKPAFR78660+",
+  admin: true
+)
+
 20.times do
   prenom = Faker::Name.first_name
   nom = Faker::Name.last_name
