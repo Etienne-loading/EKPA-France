@@ -7,10 +7,11 @@
 }
 
 .alert-info {
-  background-color: rgba(54, 91, 130, 0.2);
+  background-color: rgb(54, 91, 130);
   padding: 2em 3em;
   border-radius: 4px;
   margin-top: 2em;
+  color: white
 }
 
 .position-content {
@@ -151,12 +152,31 @@
 }
 
 .card-process {
-  background-color: rgba(54, 91, 130, 0.3);
+  background-color: rgba(54, 91, 130, 0.2);
   padding: 2em 2em 2em 2em;
   margin: 6px;
   border-radius: 4px;
   width: 20%;
   word-wrap: break-word;
+}
+
+.card-process-m {
+  background-color: rgba(54, 91, 130, 0.2);
+  padding: 2em 2em 2em 2em;
+  margin: 6px;
+  border-radius: 4px;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.img-number {
+  width: 40px;
+  height: 40px;
+}
+
+.box-img {
+  width: 100%;
+  text-align: center;
 }
 
 .strong-link {
