@@ -25,12 +25,9 @@
     </div>
     <div class="schema-mobile">
       <div class="row">
-        <div class="box-img"><%= image_tag("number-1.png", alt: "Step one", class:"img-number") %></div>
-        <div class="card-process-m"><p class="text-justify">Créer son compte CPF sur <a href="https://www.moncompteformation.gouv.fr", class="strong-link">Mon Compte Formation</a> en suivant les étapes indiquées</p></div>
-        <div class="box-img"><%= image_tag("number-2.png", alt: "Step two", class:"img-number") %></div>
-        <div class="card-process-m">Se renseigner sur notre catalogue et choisir sa <%= link_to 'formation', formations_path, class:"strong-link" %>, pour toute question suplémentaire contactez nous</div>
-        <div class="box-img"><%= image_tag("number-3.png", alt: "Step three", class:"img-number") %></div>
-        <div class="card-process-m">Demander un finacement et valider son dossier sur la plateforme <a href="https://www.moncompteformation.gouv.fr", class="strong-link">Mon Compte Formation</a></div>
+        <div class="card-process-m"><p class="text-justify"><%= image_tag("number-1.png", alt: "Step one", class:"img-number") %><br>Créer son compte CPF sur <a href="https://www.moncompteformation.gouv.fr", class="strong-link">Mon Compte Formation</a> en suivant les étapes indiquées</p></div>
+        <div class="card-process-m"><%= image_tag("number-2.png", alt: "Step two", class:"img-number") %><br>Se renseigner sur notre catalogue et choisir sa <%= link_to 'formation', formations_path, class:"strong-link" %>, pour toute question suplémentaire contactez nous</div>
+        <div class="card-process-m"><%= image_tag("number-3.png", alt: "Step three", class:"img-number") %><br>Demander un finacement et valider son dossier sur la plateforme <a href="https://www.moncompteformation.gouv.fr", class="strong-link">Mon Compte Formation</a></div>
       </div>
     </div>
     <div class="alert-info mb-5">
